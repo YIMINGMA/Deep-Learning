@@ -18,3 +18,8 @@ Codes have been written and run in Pop!_OS 20.04 LST with
 
 ## Contents
 
+- Neural Network and Deep Learning
+  - Introduction to Deep Learning
+  - Logistic Regression as a Neural Network
+  - Shallow Neural Network
+  - Deep Neural Network
