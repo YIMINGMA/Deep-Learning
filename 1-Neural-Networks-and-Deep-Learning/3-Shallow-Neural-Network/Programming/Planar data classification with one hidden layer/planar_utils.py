@@ -4,6 +4,7 @@ import sklearn
 import sklearn.datasets
 import sklearn.linear_model
 
+
 def plot_decision_boundary(model, X, y):
     # Set min and max values and give it some padding
     x_min, x_max = X[0, :].min() - 1, X[0, :].max() + 1
@@ -19,7 +20,7 @@ def plot_decision_boundary(model, X, y):
     plt.ylabel('x2')
     plt.xlabel('x1')
     plt.scatter(X[0, :], X[1, :], c=y, cmap=plt.cm.Spectral)
-    
+
 
 def sigmoid(x):
     """
@@ -33,6 +34,7 @@ def sigmoid(x):
     """
     s = 1/(1+np.exp(-x))
     return s
+
 
 def load_planar_dataset():
     np.random.seed(1)
@@ -55,6 +57,7 @@ def load_planar_dataset():
 
     return X, Y
 
+
 def load_extra_datasets():  
     N = 200
     noisy_circles = sklearn.datasets.make_circles(n_samples=N, factor=.5, noise=.3)
@@ -64,3 +67,4 @@ def load_extra_datasets():
     no_structure = np.random.rand(N, 2), np.random.rand(N, 2)
     
     return noisy_circles, noisy_moons, blobs, gaussian_quantiles, no_structure
+    
